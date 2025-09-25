@@ -2,7 +2,7 @@
 url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
 
 body{
-    background-color: #252525;
+    background-color: rgba(211, 208, 206, 0.867);
 } 
 
 .renglon{
@@ -34,9 +34,21 @@ nav ul li a {
     text-decoration: none;
     
 }
-nav ul li a:hover {
-    color: #f3961c;
-    border-radius: 20px;
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 0 5px;
+  
+}
+
+nav a:hover {
+  background-color: #f3961c;
+  color: rgb(252, 249, 249);
+  border-radius: 100px;
 }
 
 .titulo {
@@ -67,13 +79,76 @@ section{
     justify-content: center;
     gap: 30px;
 }
-.container{
-    width: 360px;
-    height: 480px ;
+.contenedor {
+    width: 380px;
+    height: 580px ;
     padding: 10px;
     margin-top: 200px;
     box-sizing: border-box;
     position: relative;
-    background: #030303;
+    background: 
+    rgb(127, 138, 138);
     border-radius: 20px;
+    gap: 10px;
 }
+
+
+.contenedor img{
+    width: 230px;
+    height: 200px;
+}
+
+.Comprar {
+    background-color: #f3961c;
+    border-radius: 100px;
+    width: 130px;
+    height: 40px;
+    margin-top: 20px;
+    border: #3b141c;
+    transition: none;
+    cursor: pointer;
+
+}
+.Comprar:hover {
+    background-color: rgba(8, 8, 8, 0.333);
+    color :white;
+}
+
+
+.Mas-detalles {
+    background-color: #f3961c;
+    border-radius: 100px;
+    width: 130px;
+    height: 40px;
+    margin-top: 20px;
+    border: #3b141c;
+    transition: none;
+    cursor: pointer;
+
+}
+.Mas-detalles:hover {
+    background-color: rgba(8, 8, 8, 0.333);
+    color :white;
+}
+.fa-cart-shopping{
+    color: white;
+    top: 20px;
+    position: fixed;
+    right: 30px;
+}
+
+.carrito{
+  margin-left: 22px;
+}
+.fa-cart-shopping{
+  font-size: 22px;
+  color: rgb(255, 38, 0);
+  cursor: pointer;
+  transition: trasform 0.3s ease,color 0.3s ease;
+
+}
+.fa-cart-shopping:hover{
+ transform: scale(1,2);
+ color: rgb(0, 0, 0);
+}
+

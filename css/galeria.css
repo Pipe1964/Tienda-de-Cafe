@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
 
-body {
-  background-color: #fff;
-  margin: 0;
+body { background-color: rgba(white rgb(253,253,253), rgb(175,175,175),alpha)}
   
-}
-
+  
 
 nav {
   background-color: #3b141c;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
+  position: relative;
 }
 .renglon {
   color: #fff;
@@ -30,39 +29,135 @@ nav ul li a {
   transition: color 0.3s ease;
 }
 nav ul li a:hover {
-  color: #f3961c;
+  color: #0000;
 }
 
-/* Título */
-.titulo {
-  color: black;
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+
+nav a:hover {
+  background-color: #f3961c;
+  color: #fff;
+  border-radius: 100px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon{
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+
+}
+
+.menu-icon span {
+  height: 3px;
+  width: 25px;
+  background-color: orange;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+
+}
+
+.logo{
+  color: #fff;
   font-size: 30px;
+  margin-top: 8px;
+  max-width: 300px
+}
+
+.titulo{
+  color: black;
+  font-size: 48px; 
   text-align: center;
-  margin-top: 30px;
+}
+
+.imagenes {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.imagenes .card {
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 40px;
+  box-shadow: 5px 5px 10px rgba(136,158,147);
+}
+
+.imagenes .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+
+.imagenes .card img:hover { 
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+
+}
+
+.imagenes-abajo {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  
+}
+.imagenes-abajo .card {
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 40px;
+  box-shadow: 5px 5px 10px rgba(136,158,147);
+}
+
+
+.imagenes-abajo .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+
+.imagenes-abajo .card img:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+
 }
 .underline {
-  width: 80px;
-  height: 4px;
-  background-color: #f3961c;
-  margin: 10px auto 30px;
+  width: 60px;
+  height: 5px;
+  background: #f3961c;
+  margin: auto;
+  margin-top: -30px;
+  cursor: pointer;
+  transition: 0.3s ease;
   border-radius: 2px;
 }
 
-
-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-section img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+.underline:hover{
+  background-color: #f3961c;
+  transform: translateY(-5px);
   transition: transform 0.3s ease;
+  
 }
-section img:hover {
-  transform: scale(1.05);
-}
+
+
+
+
+
