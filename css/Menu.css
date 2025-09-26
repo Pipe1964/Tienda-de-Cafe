@@ -1,154 +1,156 @@
-@import 
-url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Righteous&display=swap');
 
 body{
-    background-color: rgba(211, 208, 206, 0.867);
-} 
-
-.renglon{
-    color: #fff;
-
-
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #b1acac;
 }
-nav {
-    background-color: #3b141c;
+html{
+    scroll-behavior: smooth;
+}
+.container-header{
+    background: #3b141c;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.container-header header{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.container-header header .logo a{
+   font-family: sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.container-header header ul{
     display: flex;
     list-style: none;
-    text-decoration: none;
 }
-
-nav ul {
-    list-style: none;
-    padding: 0px;
-    margin-left: 55%;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 30px;
-    list-style: none;
-    
-}
-nav ul li a {
+.container-header header nav ul li a{
+    font-family: sans-serif;
+    text-align: center;
     color: #fff;
+    margin: 0 15px;
+    padding: 8px;
+    transition: .5s;
     text-decoration: none;
-    
+    border-radius: 10px;
 }
-nav a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  padding: 8px 16px;
-  border-radius: 4px;
-  display: inline-block;
-  margin: 0 5px;
-  
-}
-
-nav a:hover {
-  background-color: #f3961c;
-  color: rgb(252, 249, 249);
-  border-radius: 100px;
+.container-header header nav ul li a:hover{
+    background: #f3961c;
+    color: #3b141c;
 }
 
 .titulo {
-    color: #f3961c;
-    font-family: 50px;
-    font-size: 50px;
+    font-family: 'Righteous', cursive;
+    color: #fff;
     text-align: center;
-    
+    margin-top: 100px;
+    font-size: 40px;
 }
-.subtitulo{
-    color: #fff;
-    font-size: 30px;
-    margin-top: 8px;
-    max-width: 300px;
-}
-.descripcion{
-    color: #fff;
-    margin-top: 8px;
-    max-width: 380px;
-    font-family: 30px;
-    font-size: 15px;
-}
-
-
-
-section{
+.menu .container {
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    gap: 50px;
+    justify-content: center; 
+    padding: 20px;
 }
-.contenedor {
-    width: 380px;
-    height: 580px ;
+.container .move {
+    width: 400px;
+    height: 480px;
     padding: 10px;
-    margin-top: 200px;
     box-sizing: border-box;
     position: relative;
-    background: 
-    rgb(127, 138, 138);
-    border-radius: 20px;
-    gap: 10px;
+    text-align: center;
+    background-color: #3b141c; 
+    border-radius: 30px;
 }
 
-
-.contenedor img{
-    width: 230px;
-    height: 200px;
+.container .move img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
 }
 
-.Comprar {
+.menu .contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    gap: 50px;
+    justify-content: center; 
+    padding: 20px;
+}
+.contenedor .move {
+    width: 400px;
+    height: 480px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    background-color: #3b141c; 
+    border-radius: 30px;
+}
+
+.contenedor .move img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.texto{
+    font-size: 30px;
+    font-family: 'Miniver' sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+.parrafo{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+.boton{
+    border-radius: 10px;
     background-color: #f3961c;
-    border-radius: 100px;
-    width: 130px;
-    height: 40px;
-    margin-top: 20px;
-    border: #3b141c;
-    transition: none;
-    cursor: pointer;
-
-}
-.Comprar:hover {
-    background-color: rgba(8, 8, 8, 0.333);
-    color :white;
+    width: 150px;
+    height: 50px;
+    text-align: center;
 }
 
-
-.Mas-detalles {
-    background-color: #f3961c;
-    border-radius: 100px;
-    width: 130px;
-    height: 40px;
-    margin-top: 20px;
-    border: #3b141c;
-    transition: none;
-    cursor: pointer;
-
-}
-.Mas-detalles:hover {
-    background-color: rgba(8, 8, 8, 0.333);
-    color :white;
-}
-.fa-cart-shopping{
-    color: white;
-    top: 20px;
-    position: fixed;
-    right: 30px;
+.boton:hover{
+    color: #fff;
 }
 
-.carrito{
-  margin-left: 22px;
+.container-header header nav ul li i{
+    color: #fff;
 }
-.fa-cart-shopping{
-  font-size: 22px;
-  color: rgb(255, 38, 0);
+
+.underline {
+  width: 60px;
+  height: 5px;
+  background: #f3961c;
+  margin: auto;
+  margin-top: -30px;
   cursor: pointer;
-  transition: trasform 0.3s ease,color 0.3s ease;
-
+  transition: 0.3s ease;
+  border-radius: 2px;
 }
-.fa-cart-shopping:hover{
- transform: scale(1,2);
- color: rgb(0, 0, 0);
+
+.underline:hover{
+  background-color: #f3961c;
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+  
 }
 

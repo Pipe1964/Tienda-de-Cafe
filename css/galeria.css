@@ -1,144 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Righteous&display=swap');
 
-body { background-color: rgba(white rgb(253,253,253), rgb(175,175,175),alpha)}
-  
-  
-
-nav {
-  background-color: #3b141c;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  position: relative;
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #b1acac;;
 }
-.renglon {
-  color: #fff;
-  font-size: 24px;
+html{
+    scroll-behavior: smooth;
 }
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-  margin: 0;
+.container-header{
+    background: #3b141c;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
 }
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s ease;
+.container-header header{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
-nav ul li a:hover {
-  color: #0000;
+.container-header header .logo a{
+   font-family: sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
 }
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  padding: 8px 16px;
-  border-radius: 4px;
-  display: inline-block;
-  margin: 0 5px;
+.container-header header ul{
+    display: flex;
+    list-style: none;
 }
-
-
-nav a:hover {
-  background-color: #f3961c;
-  color: #fff;
-  border-radius: 100px;
+.container-header header nav ul li a{
+    font-family: sans-serif;
+    text-align: center;
+    color: #fff;
+    margin: 0 15px;
+    padding: 8px;
+    transition: .5s;
+    text-decoration: none;
+    border-radius: 10px;
 }
-
-#menu-toggle {
-  display: none;
+.container-header header nav ul li a:hover{
+    background: #f3961c;
+    color: #3b141c;
 }
 
-.menu-icon{
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-
+.menu .container {
+    display: grid; 
+    gap: 0px; 
+    max-width: 1000px;
+    margin: 0 580px;
+    margin-top: 35px;
+    grid-template-columns: repeat(3,1fr); 
+    
 }
 
-.menu-icon span {
-  height: 3px;
-  width: 25px;
-  background-color: orange;
-  border-radius: 5px;
-  transition: all 0.3s ease;
+.container .move img {
+    width: 450px;
+    height: 350px;
+    border-radius: 15px;
+    margin: 15px 15px;
 
 }
 
-.logo{
-  color: #fff;
-  font-size: 30px;
-  margin-top: 8px;
-  max-width: 300px
+.titulo {
+    font-family: 'Righteous', cursive;
+    color: #3b141c;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 40px;
 }
 
-.titulo{
-  color: black;
-  font-size: 48px; 
-  text-align: center;
-}
-
-.imagenes {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-}
-
-.imagenes .card {
-  width: 250px;
-  height: 200px;
-  border-radius: 10px;
-  overflow: hidden;
-  margin-top: 40px;
-  box-shadow: 5px 5px 10px rgba(136,158,147);
-}
-
-.imagenes .card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block; 
-}
-
-.imagenes .card img:hover { 
-  transform: translateY(-5px);
-  transition: transform 0.3s ease;
-
-}
-
-.imagenes-abajo {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  
-}
-.imagenes-abajo .card {
-  width: 250px;
-  height: 200px;
-  border-radius: 10px;
-  overflow: hidden;
-  margin-top: 40px;
-  box-shadow: 5px 5px 10px rgba(136,158,147);
-}
-
-
-.imagenes-abajo .card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block; 
-}
-
-.imagenes-abajo .card img:hover {
-  transform: translateY(-5px);
-  transition: transform 0.3s ease;
-
-}
 .underline {
   width: 60px;
   height: 5px;
@@ -156,8 +92,4 @@ nav a:hover {
   transition: transform 0.3s ease;
   
 }
-
-
-
-
 

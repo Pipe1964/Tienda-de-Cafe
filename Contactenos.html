@@ -1,62 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us</title>
-  <link rel="stylesheet" href="./css/contact.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/contact.css">
+     <script src="https://kit.fontawesome.com/bdc4e23805.js" crossorigin="anonymous"></script>
+    <title>CONTACTENOS</title>
 </head>
-<header>
-<nav class="contenedor">
-    <h1 class="renglon">☕️Coffee</h1>
-
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon"><i class="fa-solid fa-bars"></i>
-        <span class="line1"></span>
-        <span class="line2"></span>
-        <span class="line3"></span>
-    </label>
-    
-    <ul>
-        <li><a href="./Home.html">Home</a></li>
-        <li><a href="./Menu.html">Menu</a></li>
-        <li><a href="./Galeria.html">Galeria</a></li>
-        <li><a href="./Contactenos.html">Contactenos</a></li>
-       
-    </ul>
-</nav>
-</header>
-
 <body>
-  <h2 class="titulo">CONTACT US</h2>
+<div class="container-header">
+    <header>  
+        <div class="logo">
+            <a href="#"> ☕️ Coffee</a>
+        </div>
+        <nav class="nav">
+             <ul>
+                <li><a href="./Home.html">Home</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="./contactenos.html">Contactenos</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>
+<body>
+    <h1 class="titulo"> CONTACTENOS </h1>
     <div class="underline"></div>
-  <section class="contact">
-    <div class="contact-container">
-     
-      <div class="contact-info">
-        
-      
-        <ul>
-          <li><i class="fa-solid fa-location-dot"></i> 123 Campsite Avenue, Wilderness, CA 98765</li>
-          <li><i class="fa-solid fa-envelope"></i> info@coffeeshopwebsite.com</li>
-          <li><i class="fa-solid fa-phone"></i> (123) 456-78909</li>
-          <li><i class="fa-regular fa-clock"></i> Monday - Friday: 9:00 AM - 5:00 PM</li>
-          <li><i class="fa-regular fa-clock"></i> Saturday: 10:00 AM - 3:00 PM</li>
-          <li><i class="fa-regular fa-clock"></i> Sunday: Closed</li>
-          <li><i class="fa-solid fa-globe"></i> www.codingnepalweb.com</li>
-        </ul>
-      </div>
+    <div class="container">
+        <div class="container-inf">
+            <p><i class="fa-solid fa-location-crosshairs"></i>123 campsite avenue, wilderness CA 98765</p>
+            <p><i class="fa-regular fa-envelope"></i>info@coffeeshopwebsite.com</p>
+            <p><i class="fa-solid fa-phone"></i>(123)456-78909</p>
+            <p><i class="fa-regular fa-clock"></i>monday-friday: 9:00 AM - 5:00 PM</p>
+            <p><i class="fa-regular fa-clock"></i>saturday: 10:00 AM - 3:00 PM</p>
+            <p><i class="fa-regular fa-clock"></i>sunday: closed</p>
+            <p><i class="fa-solid fa-globe"></i>www.codingnepalweb.com</p>
+        </div>
+        <div class="container-req">
+            <label for="your name"></label><br>
+            <input type="text" id="nombre" name="nombre" required placeholder="your name">
 
-      <div class="contact-form">
-        <form action="#">
-          <input type="text" placeholder="Your name" required>
-          <input type="email" placeholder="Your email" required>
-          <textarea placeholder="Your message" rows="5" required></textarea>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-    </div>
-  </section>
+            <label for="email"></label><br>
+            <input type="email" id="email" name="email" required placeholder="your email">
 
+            <label for="message"></label><br>
+            <textarea name="mensaje" id="mensaje" rows="5" required placeholder="your message"></textarea>
+            <div class="boton">
+                <input type="submit" value="enviar"> 
+            </div>
+        </div>
+    </div> 
 </body>
+<script src="https://kit.fontawesome.com/bdc4e23805.js" crossorigin="anonymous"></script>
 </html>
