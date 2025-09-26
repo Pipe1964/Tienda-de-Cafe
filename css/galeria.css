@@ -64,6 +64,7 @@ html{
     height: 350px;
     border-radius: 15px;
     margin: 15px 15px;
+    margin-left: 50%;
 
 }
 
@@ -72,7 +73,7 @@ html{
     color: #3b141c;
     text-align: center;
     margin-top: 100px;
-    font-size: 40px;
+    font-size: 60px;
 }
 
 .underline {
