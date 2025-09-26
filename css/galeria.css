@@ -51,20 +51,21 @@ html{
 
 .menu .container {
     display: grid; 
-    gap: 0px; 
     max-width: 1000px;
-    margin: 0 580px;
+    margin: 0 auto;
     margin-top: 35px;
     grid-template-columns: repeat(3,1fr); 
     
 }
-
+.container .move{
+    justify-self: center;
+    margin: 0 auto;
+}
 .container .move img {
     width: 450px;
     height: 350px;
     border-radius: 15px;
-    margin: 15px 15px;
-    margin-left: 50%;
+    margin: 15px;
 
 }
 

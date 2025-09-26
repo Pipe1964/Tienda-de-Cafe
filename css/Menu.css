@@ -22,7 +22,6 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
 }
 .container-header header .logo a{
    font-family: sans-serif;
@@ -166,3 +165,27 @@ html{
     margin-left: auto;
     border-radius: 20px;
 }
+
+.carrito {
+  display: flex;
+  font-size: 24px; /* tamaño del carrito */
+  color: #ffffff; /* color del carrito */
+  margin-right: 40px; /* espacio con el menú */
+  cursor: pointer;
+}
+
+.carrito #contador {
+  position: absolute;
+  right: 30px;
+  top: 3px;
+  background: #f3961c; /* fondo naranja */
+  color: #ffffff;      /* número oscuro */
+  font-size: 16px;
+  font-weight: bolder;
+  border-radius: 50%;
+  padding: 2px 6px;
+}
+
+
+
+
