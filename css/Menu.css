@@ -186,6 +186,103 @@ html{
   padding: 2px 6px;
 }
 
+/* ====== HEADER Y NAV ====== */
+.container-header {
+    background: #3e2723;
+    padding: 10px 20px;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: white;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        background: #4e342e;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #menu-toggle:checked ~ .nav {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* ====== CARRITO ====== */
+.carrito {
+    position: relative;
+    cursor: pointer;
+}
+
+.carrito i {
+    font-size: 22px;
+    color: white;
+}
+
+.carrito span {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+
+
 
 
 

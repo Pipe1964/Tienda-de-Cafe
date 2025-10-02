@@ -16,3 +16,6 @@ botonComprar.forEach(boton => {
 });
 });
 });
+
+
+
